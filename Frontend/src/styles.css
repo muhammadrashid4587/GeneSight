@@ -1,0 +1,12 @@
+/* styles.css */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #8884d8; /* Initial purple color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .box:hover {
+    background-color: #32cd32; /* Green color when hovered */
+  }
+  

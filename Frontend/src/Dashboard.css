@@ -1,0 +1,40 @@
+/* Dashboard.css */
+
+  .box:hover {
+    background-color: #46e95c; /* Green color when hovered */
+  }
+
+body {
+    background-color: #f0f8ff; /* Light blue background */
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+  }  
+
+/* Container for the chart with margin and width adjustment */
+.chart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* X-axis and Y-axis text color */
+.recharts-axis-text {
+    fill: #98a9b8; /* Gray color */
+}
+
+/* Tooltip background and border customization */
+.recharts-tooltip-wrapper {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+/* Customize the legend position */
+.recharts-legend {
+    vertical-align: top;
+    height: 36px;
+}
+
+/* Bar color customization */
+.bar-custom {
+    fill: #74e26a; /* Purple bar color */
+}
