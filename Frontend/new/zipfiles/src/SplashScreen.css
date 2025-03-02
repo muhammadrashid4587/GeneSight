@@ -1,0 +1,55 @@
+/* SplashScreen.css */
+.splash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #1f2b36, #093028);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .splash-content {
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: fadeInText 2s forwards, pulseGlow 2s infinite alternate;
+  }
+  
+  .splash-title {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .splash-subtitle {
+    font-size: 1.5rem;
+    opacity: 0.85;
+  }
+  
+  /* Fade in text animation */
+  @keyframes fadeInText {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  /* A subtle pulse glow effect */
+  @keyframes pulseGlow {
+    from { text-shadow: 0 0 10px rgba(255,255,255,0.8); }
+    to { text-shadow: 0 0 20px rgba(255,255,255,0.4); }
+  }
+  
+  /* Splash fade-out animation */
+  .fade-out {
+    animation: fadeOutSplash 1s forwards;
+  }
+  
+  @keyframes fadeOutSplash {
+    from { opacity: 1; }
+    to { opacity: 0; visibility: hidden; }
+  }
+  
